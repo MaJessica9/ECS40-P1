@@ -1,12 +1,12 @@
 #ifndef PERMISSIONS_H
   #define PERMISSIONS_H
 
-typdef struct{
+typedef struct{
   short umask_val;
-}Permissions
+}Permissions;
 
-createPermissions(Permissions *permissions, int octal);
+void createPermissions(Permissions *permissions, int octal);
 
-printPermissions(Permissions *permissions);
+void printPermissions(Permissions *permissions);
 
 #endif

@@ -9,7 +9,7 @@ void createPermissions(Permissions *permissions, int octal)
 
 void printPermissions(Permissions *permissions)
 {
-  switch(octal)
+  switch(permissions->umask_val)
   {
     case 0:
       printf("rwx ");

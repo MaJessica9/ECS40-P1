@@ -1,8 +1,6 @@
 #include "permissions.h"
-
-typdef struct{
-  short umask_val;
-}Permissions
+#include <stdio.h>
+#include <stdlib.h>
 
 void createPermissions(Permissions *permissions, int octal)
 {

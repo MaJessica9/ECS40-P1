@@ -1,8 +1,12 @@
 #ifndef PERMISSIONS_H
-  #def PERMISSIONS_H
+  #define PERMISSIONS_H
 
-createPermissions(int octal);
+typdef struct{
+  short umask_val;
+}Permissions
 
-printPermissions(???);
+createPermissions(Permissions *permissions, int octal);
+
+printPermissions(Permissions *permissions);
 
 #endif

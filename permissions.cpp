@@ -5,7 +5,7 @@
 void createPermissions(Permissions *permissions, int octal)
 {
   permissions->umask_val = (short) octal;
-}
+} // createPermissions
 
 void printPermissions(Permissions *permissions)
 {
@@ -35,5 +35,5 @@ void printPermissions(Permissions *permissions)
     case 7:
       printf("--- ");
       break;
-  }
-}
+  } // switch(octal)
+} // printPermissions

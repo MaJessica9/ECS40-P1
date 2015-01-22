@@ -12,13 +12,11 @@ void umask(Funix *funix, int argCount, const char *arguments[])
     if (arguments[0][0] < '0'||arguments[0][0] > '7')
        printf("umask: octal must be between 0 and 7\n");
     else
-      printf("YAY!\n");
-    // { 
-    //   i = atoi(argument[0][0]);
-    //   funix->umask = i;
-    //   funix->time = funix->time + 1;
-    //
-    // }
-
-  }
-}
+    { 
+      //i = atoi(*arguments[0]);
+      //printf("%d\n", i);
+      //funix->umask = i;
+      funix->time = funix->time + 1;
+    }//else
+  }//else
+}//umask

@@ -1,3 +1,5 @@
+// Author: Jessica Ma
+
 void umask(Funix *funix, int argCount, const char *arguments[])
 {
   // Assuming the command doesn't count as an argument
@@ -13,10 +15,8 @@ void umask(Funix *funix, int argCount, const char *arguments[])
        printf("umask: octal must be between 0 and 7\n");
     else
     { 
-      //i = atoi(*arguments[0]);
-      //printf("%d\n", i);
-      //funix->umask = i;
-      funix->time = funix->time + 1;
+      i = atoi(arguments[0]);
+      funix->umask = i;
     }//else
   }//else
 }//umask
